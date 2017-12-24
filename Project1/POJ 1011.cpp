@@ -64,7 +64,7 @@ int main()
 				}
 			}
 		}
-		if (!flag)cout << sum << endl;//输出长度为sum的一根木棒切出的n根木条
+		if (!flag)cout << sum << endl;//输出长度为sum的一根木棒切出的n根木条.
 	}
 	return 0;
 }
