@@ -13,6 +13,7 @@ char map[maxw][maxh];//定义map
 bool visited[maxw][maxh];//标识相应map点是否已被访问
 int ans, w, h;//变量：输出值；行；列
 void search(int i, int j);
+
 int main()
 {
 	cin >> w >> h;//输入map行列
@@ -21,6 +22,7 @@ int main()
 		int pw, ph;//初始位置
 		ans = 0;//输出值初始化
 		memset(visited, false, sizeof(visited));//标识访问数组初始化
+
 		for (int i = 0; i < h; i++)
 		{
 			cin >> map[i];//输入map
@@ -33,6 +35,7 @@ int main()
 				}
 			}
 		}
+
 		search(pw, ph);//回溯法
 		cout << ans << endl;
 		cin >> w >> h;//输入新的变量
@@ -47,6 +50,7 @@ void search(int i, int j)
 	}
 	ans++;
 	visited[i][j] = true;//标识[i][j]已被访问
+
 	search(i, j + 1);//递归
 	search(i, j - 1);
 	search(i + 1, j);

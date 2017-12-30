@@ -19,7 +19,7 @@ void print(int n)
 int main()
 {
 	int n, loop = 1;//字符串集合序号初始化
-	cin >> n;//输出第一个字符串集合的字符串个数
+	cin >> n;//输入第一个字符串集合的字符串个数
 	while (n)
 	{
 		cout << "Set " << loop++ << endl;//输出当前字符串集合序号

@@ -35,6 +35,7 @@ void func(int r)
 				Right[rightn] = 1;
 				col[j] = 1;
 				temp[r] = j;
+
 				func(r + 1);
 
 				Left[leftn] = 0;//回溯，恢复递归前的状态
@@ -51,6 +52,7 @@ int main()
 	int Case;
 	int boaed[8][8];//定义棋盘
 	scanf("%d", &Case);//读入棋盘数量
+
 	while (Case--)
 	{
 		for (int i = 0; i < 8; i++)//读入棋盘数据
@@ -75,6 +77,7 @@ int main()
 				ans = sum;
 			}
 		}
+
 		printf("%d", ans);
 	}
 	return 0;
