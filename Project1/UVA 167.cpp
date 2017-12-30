@@ -5,14 +5,14 @@
 #include<cstdio>
 #include<vector>
 using namespace std;
-bool Left[15] = { 0 }, Right[15] = { 0 }, col[8] = { 0 };//递归回溯时的状态变量，设为全局变量
+bool Left[15] = { 0 }, Right[15] = { 0 }, col[8] = { 0 };//1、状态：递归回溯时的状态变量，设为全局变量
 int p[1000][8];//存储摆放的所有位置
 int temp[8];
 int n = 0;//不同的摆放方法的数量
 
 void func(int r)
 {
-	if (r == 8)//边界条件
+	if (r == 8)//2、边界条件
 	{
 		for (int i = 0; i < 8; i++)//存入p
 		{
@@ -24,12 +24,12 @@ void func(int r)
 
 	else
 	{
-		for (int j = 0; j < 8; j++)
+		for (int j = 0; j < 8; j++)//3、搜索范围
 		{
 			int leftn = 7 + j - r;
 			int rightn = r + j;
 
-			if (!Left[leftn] && !Right[rightn] && !col[j])//如果相关的位置没有被访问，那么访问且进入下一层递归
+			if (!Left[leftn] && !Right[rightn] && !col[j])//4、约束条件：如果相关的位置没有被访问，那么访问且进入下一层递归
 			{
 				Left[leftn] = 1;
 				Right[rightn] = 1;
