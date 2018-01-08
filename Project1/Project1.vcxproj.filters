@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="静态链表.cpp">
+    <ClCompile Include="ADT_Polynomial.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

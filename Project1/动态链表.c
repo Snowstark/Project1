@@ -60,7 +60,6 @@ int ListDelete_L(Node *L, int i, int *e)
 
 void CreatList_L(Node *L, int n)
 {
-	Node *L;
 	creatNode(L);
 	L->p = NULL;
 	for (int i = n; i > 0; i--)
