@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ADT_Polynomial.c">
+    <ClCompile Include="POJ 1040.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
